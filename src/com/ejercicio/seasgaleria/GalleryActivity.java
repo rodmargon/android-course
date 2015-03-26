@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.graphics.Matrix;
 import android.graphics.PointF;
 import android.os.Bundle;
-import android.util.FloatMath;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -15,6 +14,7 @@ import android.widget.ImageView;
 
 import com.ejercicio.util.BitMapUtil;
 
+@SuppressWarnings("deprecation")
 public class GalleryActivity extends Activity implements OnTouchListener{
 	
 	//To identify the log regiter
@@ -37,10 +37,8 @@ public class GalleryActivity extends Activity implements OnTouchListener{
 	ImageView selectedImage;
 	
 	//Gallery widget
-	@SuppressWarnings("deprecation")
 	Gallery gallery;
 
-	@SuppressWarnings("deprecation")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		
@@ -63,7 +61,6 @@ public class GalleryActivity extends Activity implements OnTouchListener{
 			
 			
 			
-		@SuppressWarnings("deprecation")
 		public void onItemClick(AdapterView<?> paretn, View view,
 				int position, long id) {
 			// TODO Auto-generated method stub
